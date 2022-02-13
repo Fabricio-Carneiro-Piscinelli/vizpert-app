@@ -2,7 +2,7 @@
 import { Content } from './initialStyled';
 
 // icons
-// import logo from '../../Assets/logo.svg';
+import logo from '../../Assets/logo.svg';
 import bgStripes from '../../Assets/bg_stripes.svg';
 import ground from '../../Assets/ground.svg';
 
@@ -12,6 +12,7 @@ import ground from '../../Assets/ground.svg';
 // componets
 // import Book from '../../components/book';
 import Bookcase from '../../components/bookcase';
+import SortBy from '../../components/sortby';
 
 // layouts
 // import Ground from '../../layouts/ground';
@@ -23,8 +24,11 @@ function InitialPage() {
       <div style={{ width: 100 }}>
         <Bookcase />
       </div>
-      {/* <div style={{ width: 40, display: 'flex' }}>
+      <div style={{ width: 100 }}>
         <img src={logo} alt="logo" />
+      </div>
+      <SortBy />
+      {/* <div style={{ width: 40, display: 'flex' }}>
         <Book ObjectBook={dataBooks.BookA} />
         <Book ObjectBook={dataBooks.BookB} />
         <Book ObjectBook={dataBooks.BookC} />
