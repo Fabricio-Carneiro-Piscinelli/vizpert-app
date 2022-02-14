@@ -12,22 +12,23 @@ import ground from '../../Assets/ground.svg';
 // componets
 // import Book from '../../components/book';
 import Bookcase from '../../components/bookcase';
-import SortBy from '../../components/sortby';
 
 // layouts
 // import Ground from '../../layouts/ground';
+import People from '../../layouts/people';
 
 function InitialPage() {
   return (
     <Content bg_stripes={bgStripes} ground={ground}>
       {/* <Title /> */}
-      <div style={{ width: 100 }}>
+      <div>
         <Bookcase />
       </div>
       <div style={{ width: 100 }}>
         <img src={logo} alt="logo" />
       </div>
-      <SortBy />
+
+      <People />
       {/* <div style={{ width: 40, display: 'flex' }}>
         <Book ObjectBook={dataBooks.BookA} />
         <Book ObjectBook={dataBooks.BookB} />

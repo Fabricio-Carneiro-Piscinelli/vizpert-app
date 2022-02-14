@@ -6,7 +6,13 @@ import filterSizes from '../../Assets/sortBy/filter_sizes.svg';
 import ButtonOrganize from '../../Assets/sortBy/button.svg';
 
 // style
-import { Content } from './SortByStyle';
+import {
+  Content,
+  ContentFilterOrganize,
+  TitleButtonsFilter,
+  ButtonsFilter,
+  Divider,
+} from './SortByStyle';
 
 // components
 import ButtonFilter from './buttonFilter';
@@ -14,11 +20,16 @@ import ButtonFilter from './buttonFilter';
 function SortBy() {
   return (
     <Content background={Board}>
-      <ButtonFilter icon={filterAlphabetic} />
-      <ButtonFilter icon={filterColors} />
-      <ButtonFilter icon={filterSizes} />
-
-      <img src={ButtonOrganize} alt="border" />
+      <ContentFilterOrganize>
+        <TitleButtonsFilter>SORT BY</TitleButtonsFilter>
+        <ButtonsFilter>
+          <ButtonFilter icon={filterAlphabetic} />
+          <ButtonFilter icon={filterColors} />
+          <ButtonFilter icon={filterSizes} />
+        </ButtonsFilter>
+        <Divider />
+        <img src={ButtonOrganize} alt="border" />
+      </ContentFilterOrganize>
     </Content>
   );
 }
